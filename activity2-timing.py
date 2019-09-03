@@ -22,11 +22,11 @@ try:
         pulse_start = time.time()
         while not GPIO.input(portEcho):
             pulse_start = time.time()
-			
+            
         pulse_end = pulse_start
         while GPIO.input(portEcho):
             pulse_end = time.time()
-			
+            
         pulse_duration = pulse_end - pulse_start
 
         if pulse_duration  < 0.023:  # otherwise timeout
