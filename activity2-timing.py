@@ -31,8 +31,9 @@ try:
 
         if pulse_duration  < 0.023:  # otherwise timeout
             distance = (pulse_duration / 2) * 13504
-            print "Distance: {:0.2f}".format(distance)
+            #print "Distance: {:0.2f}".format(distance)
+            print ("Distance:","{:0.2f}".format(distance))
         time.sleep(0.1)
 
- except KeyboardInterrupt:
+except KeyboardInterrupt:
     GPIO.cleanup()
