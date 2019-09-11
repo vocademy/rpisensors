@@ -18,7 +18,7 @@ try:
         tempC = (millivolts - 500) / 10  # 10mv/C   0.5v=0C
         tempF = ((tempC * 9) / 5) + 32
         
-        print "Data={0}  Temp F={1}  Temp C={2}".format(raw_data, tempF, tempC)
+        print ("Data={0}  Temp F={1}  Temp C={2}".format(raw_data, tempF, tempC))
         time.sleep(0.5)
 
 except KeyboardInterrupt:
